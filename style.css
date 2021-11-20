@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Open+Sans&family=Quicksand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 12px;
+    color: #1f1f1f;
+}
+
+nav {
+    display: flex;
+    padding: 3em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a[href="#home"] {
+    text-decoration: none;
+    font-size: 2em;
+    color: #1f1f1f;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 1.5em;
+
+}
+
+#links a{
+    padding: 3px;
+    list-style: none;
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+#links a:hover {
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+
+#home p {
+    padding: 1em;
+    font-size: 2.5em;
+    font-weight: 100;
+    text-align: center;
+}
+#home img {
+    padding: 1em;
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+#work h4 {
+    color: #000000;
+    font-size: 2.5em;
+    margin: 1em 0;
+    margin-left: 1em;
+    font-weight: 800;
+}
+
+#work p {
+    font-size: 1.6em;
+    padding: 1em;
+    text-align: justify;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px;
+    padding: 1em;
+}
+
+.grid img {
+    grid-column: span 12;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+#contact p {
+    text-align: justify;
+}
+address {
+    margin-top: 1em;
+    font-style: normal;
+}
+
+footer {
+    text-align: center;
+    background: #ebebeb;
+    padding: 1.5em;
+    color: #333;
+}
+
+footer p {
+    font-size: 1.5em;
+}
+.social-icons  a{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    margin: 5px;
+}
+
+.fa:hover {
+    color: #fff;
+    background: #000;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: 16px;
+    }
+
+    #links a{
+        padding: 5px;
+    }
+
+    .grid {
+        grid-gap: 20px;
+    }
+    .grid img {
+        grid-column: span 6;
+    }
+
+    #home p {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    #work h4 {
+        margin-top: 2em;
+        margin-left: 1.5em;
+        margin-bottom: 0;
+        
+    }
+    
+    #work p {
+        margin-left: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 60px;
+    }
+    #contact p {
+        grid-column: span 3;
+        text-align: left;
+    }
+    #contact address {
+        grid-column: span 2;
+        margin: 0;
+        text-align: end;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+
+    .grid img {
+        grid-column: span 4;
+    }
+
+    #home p {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 60px;
+    }
+    #contact p {
+        grid-column: 2/5;
+        text-align: justify;
+    }
+    #contact address {
+        grid-column: 6/7;
+        margin: 0;
+        text-align: justify;
+    }
+}
